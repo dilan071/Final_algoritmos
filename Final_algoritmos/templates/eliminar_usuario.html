@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eliminar Usuario</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Eliminar Usuario</h1>
+        <form action="{{ url_for('vista_usuarios.eliminar_usuario_result') }}" method="post">
+            <label for="nombre">Nombre del Trabajador:</label>
+            <input type="text" id="nombre" name="nombre" required><br><br>
+            <label for="cedula">Cédula del Trabajador:</label>
+            <input type="text" id="cedula" name="cedula" required><br><br>
+            <input type="submit" value="Eliminar">
+        </form>
+        <div class="submit-button">
+            <a class="button" href="{{ url_for('vista_usuarios.home') }}"><b>Regresar</b></a>
+        </div>
+    </div>
+    </div>
+</body>
+</html>

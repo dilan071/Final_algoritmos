@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calcular Nómina</title>
+    <link rel="stylesheet" href="static/css/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Calcular Nómina</h1>
+        <form action="/crear_usuario">
+            <div>
+                Nombre: <input type="text" name="nombre" />
+            </div>
+            <div>
+                Cédula: <input type="text" name="cedula" />
+            </div>
+            <div>
+                Salario Básico: <input type="text" name="salario" />
+            </div>
+            <div>
+                Días Trabajados: <input type="text" name="Días_Trabajados" />
+            </div>
+            <div>
+                Días de Licencia por Enfermeda: <input type="text" name="Días_enfermedad" />
+            </div>
+            <div>
+                Auxilio de Transporte: <input type="text" name="Auxilio_Trasporte" />
+            </div>
+            <div>
+                Horas Extras Diurnas: <input type="text" name="Horas_diurnas_extra" />
+            </div>
+            <div>
+                Horas Extras Nocturnas: <input type="text" name="Horas_nocturnas_extra" />
+            </div>
+            <div>
+                Horas Extras Diurnas en Festivos: <input type="text" name="Horas_diurnas_extra_festivo" />
+            </div>
+            <div>
+                Horas Extras Nocturnas en Festivos: <input type="text" name="Horas_nocturnas_extra_festivo" />
+            </div>
+            <div>
+                Días de Licencia: <input type="text" name="Días_Libres" />
+            </div>
+            <div>
+                Porcentaje de Seguro de Salud: <input type="text" name="Porcentaje_seguro_salud" />
+            </div>
+            <div>
+                Porcentaje de Aporte a Pensiones: <input type="text" name="Porcentaje_retiro" />
+            </div>
+            <div>
+                Porcentaje de Fondo de Retiro: <input type="text" name="percentage_retirement_fund" />
+            </div>
+
+
+            <div class="submit-button">
+            <input type="submit" value="Guardar" />
+            </div>
+            <div class="submit-button">
+                <a class="button" href="{{ url_for('vista_usuarios.home') }}"><b>Regresar</b></a>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
